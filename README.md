@@ -15,16 +15,18 @@
 |[NG-RANSAC](#NG)      |  -                    |    Unsupervised          |      -                   |    YFCC100M,SUN3D        |2019|
 |[ULCM](#ULCM)      |  -                    |    Unsupervised          |      -                   |    MiddleburyMultiView,KITTI        |2019|
 |[ACNE](#ACNE)      |   Linear                   |       MLP, ACN      |       ReLU+Tanh            |          YFCC100M,SUN3D                | 2020    |
-|[LMCNet](#LMC)      |    Linear                 |      MLP,KNN,CN,OA        |   Sigmoid                     |  YFCC100M,SUN3D,DETRAC        |2020|                                               
+|[LMCNet](#LMC)      |    Linear                 |      MLP,KNN,CN,OA        |   Sigmoid                     |  YFCC100M,SUN3D,DETRAC        |2020|                            
 |[CLNet](#CL)      |   Linear                  |        MLP,GCN      |           ReLU+tanh             |                 YFCC100M,SUN3D      | 2021    |
 |[T-Net](#T)      |       T                      |       MLP,CA,CN,OA          |        ReLU+tanh    |                     YFCC100M,SUN3D            |  2021   |
 |[GLHA](#GLHA)      | Linear                      |MLP,BACN,CA,Guided Loss               |Softmax       |         YFCC100M,SUN3D |    2021|
 |[PESA-Net](#PESA)      |    Linear                 |                            |                        |                       |2022  |
-
-
-
-
 |[MSA-Net](#MSA)      |    Linear                 |       MLP,CN,MSA,OA                |          ReLU+tanh                |             YFCC100M,SUN3D   |  2022   |
+|[GANet](#GA)      |             Linear        |          MLP,CN,GAT,OA     |       ReLU+tanh          |                  YFCC100M,SUN3D                     |  2022   |
+|[MS2DGNet](#MS2DG)      |          Linear           |       MLP,CN,GA       |        ReLU+tanh         |       YFCC100M,SUN3D            |  2022   |
+|[NeFSAC](#NeF)      |        Linear             |   MLP,MaxPool      |                        |         KITTI,PhotoTourism   |   2022  |
+|[PGFNet](#PGF)      |                     |              | MLP,CN,SA,CA,OA,                     |             YFCC100M,SUN3D        |  2023   |
+
+
 
 |[](#)      |                     |              |                        |                                                         |     |
 
@@ -42,7 +44,9 @@ CA: channel-wise attention
 BACN: Bayesian attentive context normalization  
 ACN: Attentive Context Normalization  
 GCN:  
-MSA:multi-scale attention  
+MSA:multi-scale attention
+GA:Graph Attention 
+SA:spatial attention
 
 
 - <a id="PointNet">[PointNet]</a> PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation,CVPR'2017[[project]](https://stanford.edu/~rqi/pointnet/)
@@ -56,10 +60,12 @@ MSA:multi-scale attention
 - <a id="ULCM">[ULCM]</a> Unsupervised Learning of Consensus Maximization for 3D Vision Problems, CVPR'2019 [[pdf]](http://openaccess.thecvf.com/content_CVPR_2019/papers/Probst_Unsupervised_Learning_of_Consensus_Maximization_for_3D_Vision_Problems_CVPR_2019_paper.pdf)
 - [ACNe] ACNe: Attentive context normalization for robust permutation-equivariant learning, CVPR'2020[[code]](https://github.com/vcg-uvic/acne)
 - [LMCNet] Learnable motion coherence for correspondence pruning,CVPR'2021 [[pdf]](https://arxiv.org/abs/2011.14563)[[code]](https://github.com/liuyuan-pal/LMCNet)
-- Point2CN: Progressive two-view correspondence learning via information fusion
-- TSSN-Net: Two-step Sparse Switchable Normalization for Learning Correspondences with Heavy Outliers
 - [CLNet] Progressive correspondence pruning by consensus learning,ICCV'2021 [[pdf]](https://arxiv.org/abs/2101.00591)
 - [TNet] T-Net: Effective permutation-equivariant network for two-view correspondence learning,ICCV'2021[[pdf]](https://openaccess.thecvf.com/content/ICCV2021/papers/Zhong_T-Net_Effective_Permutation-Equivariant_Network_for_Two-View_Correspondence_Learning_ICCV_2021_paper.pdf)
 - [GLHA] Cascade Network with Guided Loss and Hybrid Attention for Finding Good Correspondences,AAAI'2021[[pdf]](https://arxiv.org/abs/2102.00411)[[code]](https://github.com/wenbingtao/GLHA)
 - [MSANet]MSA-net: Establishing reliable correspondences by multiscale attention network,TIP'2022[[pdf]](https://guobaoxiao.github.io/papers/TIP2022b(1).pdf)
 - [PESA-Net] PESA-Net: Permutation-Equivariant Split Attention Network for correspondence learning,IF'2022[[pdf]](https://guobaoxiao.github.io/papers/IF_2021_PESA-Net.pdf)[[code]](https://github.com/guobaoxiao/PESA-Net)
+- [GANet] Learning for mismatch removal via graph attention networks,ISPRS J PHOTOGRAMM'2022,[[pdf]](https://www.researchgate.net/profile/Yang-Wang-241/publication/361865594_Learning_for_mismatch_removal_via_graph_attention_networks/links/62ce43a06151ad090b9794dd/Learning-for-mismatch-removal-via-graph-attention-networks.pdf)[[code]](https://github.com/StaRainJ/Code-of-GANet)
+- [MS2DGNet] MS2DGNet: Progressive correspondence learning via multiple sparse semantics dynamic graph,CVPR'2022[[pdf]](https://openaccess.thecvf.com/content/CVPR2022/papers/Dai_MS2DG-Net_Progressive_Correspondence_Learning_via_Multiple_Sparse_Semantics_Dynamic_Graph_CVPR_2022_paper.pdf)[[code]](https://github.com/changcaiyang/MS2DG-Net)
+- [NeFSAC] NeFSAC: Neurally filtered minimal samples,ECCV'2022[[pdf]](https://arxiv.org/abs/2207.07872)[[code]](https://github.com/cavalli1234/NeFSAC)
+- [PGFNet]]PGFNet: Preference-guided filtering network for two-view correspondence learning,TIP'2023[[pdf]](https://ieeexplore.ieee.org/document/10041834)[[code]](https://github.com/guobaoxiao/PGFNet)
