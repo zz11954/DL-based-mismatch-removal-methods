@@ -3,32 +3,32 @@
 
 
 
-| **Reference**                 | **Network structure** | **Main technologies** | **Activation function used in weight generating** | **Datasets**             |**Published** |
-|:---------------------------:|:---------------------:|:---------------------:|:-----------------------: |:---------------------:  |:--------------:|
-|[PointNet](#PointNet)|  Linear               |  MLP                  | Softmax                   |                         | 2017|
-|[LFGC](#LFGC)        |  Linear               |  MLP,CN               | ReLU+Tanh                  |   YFCC100M,SUN3D        | 2018|
-|[DFENet](#DFE)       |  Linear               |  MLP,IRLS             | Softmax                    |   KITTI,Tanks,Temples   | 2018|
-|[N3Net](#N3N)        |  Linear               |  MLP,Differential KNN  | ReLU+Tanh                 |   BSD500                      | 2018|
-|[NMNet](#NM)         |  Linear               |  MLP,KNN,IN,CN         | Sigmoid                   | NARROW, WIDE,COLMAP,MULTI   |2019|
-|[OANet](#OA)         |  Linear               |  MLP,CN,OA,IRLS         | ReLU+Tanh                | YFCC100M,SUN3D            |2019|
-|[LMR](#LMR)         |  Linear               |  MLP, Multiple KNNs       | Sigmoid                   | RS,Retina,DAISY, DTU     |2019|
-|[NG-RANSAC](#NG)      |  -                    |    Unsupervised          |      -                   |    YFCC100M,SUN3D        |2019|
-|[ULCM](#ULCM)      |  -                    |    Unsupervised          |      -                   |    Temple,Dino,KITTI        |2019|
-|[ACNE](#ACNE)      |   Linear                   |       MLP, ACN      |       ReLU+Tanh            |          YFCC100M,SUN3D                | 2020    |
-|[LMCNet](#LMC)      |    Linear                 |      MLP,KNN,CN,OA        |   Sigmoid                     |  YFCC100M,SUN3D,DETRAC        |2020|                            
-|[CLNet](#CL)      |   Linear                  |        MLP,GCN      |           ReLU+tanh             |                 YFCC100M,SUN3D      | 2021    |
-|[T-Net](#T)      |       T                      |       MLP,CA,CN,OA          |        ReLU+tanh    |                     YFCC100M,SUN3D            |  2021   |
-|[GLHA](#GLHA)      | Linear                      |MLP,BACN,CA,Guided Loss               |Softmax       |         YFCC100M,SUN3D |    2021|
-|[PESA-Net](#PESA)      |    Linear                 |                            |                        |                       |2022  |
-|[MSA-Net](#MSA)      |    Linear                 |       MLP,CN,MSA,OA                |          ReLU+tanh                |             YFCC100M,SUN3D   |  2022   |
-|[GANet](#GA)      |             Linear        |          MLP,CN,GAT,OA     |       ReLU+tanh          |                  YFCC100M,SUN3D                     |  2022   |
-|[MS2DGNet](#MS2DG)      |          Linear           |       MLP,CN,GA       |        ReLU+tanh         |       YFCC100M,SUN3D            |  2022   |
-|[NeFSAC](#NeF)      |        Linear             |   MLP,MaxPool      |                        |         KITTI,PhotoTourism   |   2022  |
-|[PGFNet](#PGF)      |                     |              | MLP,CN,SA,CA,OA,                     |             YFCC100M,SUN3D        |  2023   |
-|[ANANet](#ANA)      |                     |   MLP, attention          |                        |                YFCC100M,SUN3D                | 2023    |
+| **Reference**                 | **Network structure** | **Main technologies**| **Datasets**             |**Published** |
+|:---------------------------:|:---------------------:|:---------------------: |:---------------------:  |:--------------:|
+|[PointNet](#PointNet)|  Linear               |  MLP                   |                         | 2017|
+|[LFGC](#LFGC)        |  Linear               |  MLP,CN                |   YFCC100M,SUN3D        | 2018|
+|[DFENet](#DFE)       |  Linear               |  MLP,IRLS              |   KITTI,Tanks,Temples   | 2018|
+|[N3Net](#N3N)        |  Linear               |  MLP,Differential KNN   |   BSD500                | 2018|
+|[NMNet](#NM)         |  Linear               |  MLP,KNN,IN,CN          | NARROW, WIDE,COLMAP,MULTI   |2019|
+|[OANet](#OA)         |  Linear               |  MLP,CN,OA,IRLS         | YFCC100M,SUN3D            |2019|
+|[LMR](#LMR)         |  Linear               |  MLP, Multiple KNNs       | RS,Retina,DAISY, DTU     |2019|
+|[NG-RANSAC](#NG)    |  -                    |    Unsupervised          |    YFCC100M,SUN3D        |2019|
+|[ULCM](#ULCM)      |  -                    |    Unsupervised          |    Temple,Dino,KITTI        |2019|
+|[ACNE](#ACNE)      |   Linear                   |       MLP, ACN       |          YFCC100M,SUN3D                | 2020    |
+|[LMCNet](#LMC)      |    Linear                 |      MLP,KNN,CN,OA     |  YFCC100M,SUN3D,DETRAC        |2020|                            
+|[CLNet](#CL)      |   Linear                  |        MLP,GCN            |  YFCC100M,SUN3D      | 2021    |
+|[T-Net](#T)      |       T                   |       MLP,CA,CN,OA            |                     YFCC100M,SUN3D            |  2021   |
+|[GLHA](#GLHA)      | Linear                      |MLP,BACN,CA,Guided Loss    |         YFCC100M,SUN3D |    2021|
+|[PESA-Net](#PESA)    |    Linear              |                              |                        |                       |2022  |
+|[MSA-Net](#MSA)      |    Linear                 |       MLP,CN,MSA,OA       |             YFCC100M,SUN3D   |  2022   |
+|[GANet](#GA)      |             Linear        |          MLP,CN,GAT,OA      |                  YFCC100M,SUN3D        |  2022   |
+|[MS2DGNet](#MS2DG) |          Linear           |       MLP,CN,GA        |   YFCC100M,SUN3D            |  2022   |
+|[NeFSAC](#NeF)      |        Linear             |   MLP,MaxPool        |    KITTI,PhotoTourism   |   2022  |
+|[PGFNet](#PGF)      |                     |  MLP,CN,SA,CA,OA           |   YFCC100M,SUN3D        |  2023   |
+|[ANANet](#ANA)      |                     |   MLP, attention          |     YFCC100M,SUN3D   | 2023    |
 
 
-|[](#)      |                     |              |                        |                                                         |     |
+|[](#)      |               |                        |                                                         |     |
 
 
 
