@@ -103,3 +103,4 @@ GCN: Graph Convolution Network
 - <a id="MSGA">[MSGA-Net] </a>MSGA-Net: Progressive Feature Matching via Multi-layer Sparse Graph Attention,TCSVT'2024[[pdf]](https://ieeexplore.ieee.org/document/10439184)
 - <a id="GIM">[GIM] </a>GIM: Learning Generalizable Image Matcher From Internet Videos,ICLR'2024[[pdf]](https://arxiv.org/abs/2402.11095)[[code]](https://github.com/xuelunshen/gim)
 - <a id="SSL">[SSL-Net]</a> SSL-Net: Sparse semantic learning for identifying reliable correspondences,PR'2024[[pdf]](https://www.sciencedirect.com/science/article/pii/S0031320323007367)[[code]](https://github.com/guobaoxiao/SSL-Net)
+  
