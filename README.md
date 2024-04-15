@@ -11,10 +11,10 @@
 |[LMR](#LMR)         | MLP, Multiple KNNs       | RS,Retina,DAISY, DTU     |2019|
 |[NG-RANSAC](#NG)    |  Unsupervised          |    YFCC100M,SUN3D        |2019|
 |[ULCM](#ULCM)      |  Unsupervised          |    Temple,Dino,KITTI        |2019|
-|[Superglue](#super)|   Graph Attention,MLP,Sinkhorn |   ScanNet,PhotoTourism,HPatches,Aachen Day-Night   |   2020   |
+|[SuperGlue](#super)|   Graph Attention,MLP,Sinkhorn |   ScanNet,PhotoTourism,HPatches,Aachen Day-Night   |   2020   |
 |[ACNE](#ACNE)      |   MLP, CN,Attention             |    YFCC100M,SUN3D      | 2020    |
 |[LMCNet](#LMC)      |   MLP,KNN,CN,OA     |  YFCC100M,SUN3D,DETRAC        |2020| 
-|[LSV-ANet](#)      |  KNN,Attention       |  SUIRD,RS,VGG,OXBs  |   2021   |
+|[LSV-ANet](#LSVA)      |  KNN,Attention       |  SUIRD,RS,VGG,OXBs  |   2021   |
 |[CLNet](#CL)      | MLP,GCN                |  YFCC100M,SUN3D      | 2021    |
 |[T-Net](#T)       |  MLP,Attention,CN,OA          |  YFCC100M,SUN3D    |  2021   |
 |[GLHA](#GLHA)      |MLP,CN,Attention,Guided Loss    |         YFCC100M,SUN3D |    2021|
@@ -37,7 +37,7 @@
 |[SAM](#)      |     MLP,Transformer	         |      Oxford100k,MegaDepth,YFCC100M,HPatches         |       2023        |
 |[Htmatch](#)      |     Transformer,GNN,Sinkhorn   |            GL3D,FM-Bench,YFCC100M,ScanNet,Aachen Day-Night    |      2023         |
 |[Sganet](#)      |   MLP,CN,Transformer                |      YFCC100M,SUN3D        |       2023        |
-|[Emergent corr ](#)      |     Diffusion              |               |        2023       |
+|[DIFT ](#)      |     Diffusion              |               |        2023       |
 |[Amatformer](#)      |     Transformer      |  GL3D，Scannet，FM-Bench，YFCC100M             |     2023          |
 |[Roma](#)      |         Diffusion,Transformer           |        MegaDepth，ScanNet，WxBS ，InLoc       |        2024     |
 |[Vsformer](#)      |   Transformer,MLP,KNN                |         YFCC100M,SUN3D       |        2024        |
@@ -53,8 +53,8 @@ MLP:multilayer perceptron
 CN:context normalization  
 IRLS:iteratively reweighted least squares  
 KNN: k-nearest neighbors  
-OA: Differentiable Pooling layer, Order and Aware Filtering block, and Differentiable Unpooling layer
-GCN: Graph Convolution Network
+OA: Differentiable Pooling layer, Order and Aware Filtering block, and Differentiable Unpooling layer  
+GCN: Graph Convolution Network  
 
 
 
@@ -67,12 +67,12 @@ GCN: Graph Convolution Network
 - <a id="LMR">[LMR]</a>  LMR: Learning A Two-class Classifier for Mismatch Removal, TIP'2019 [[pdf]](https://starainj.github.io/Files/TIP2019-LMR.pdf) [[code]](https://github.com/StaRainJ/LMR)
 - <a id="NG">[NG-RANSAC]</a> Neural-Guided RANSAC: Learning Where to Sample Model Hypotheses, ICCV'2019 [[pdf](https://arxiv.org/pdf/1905.04132.pdf)] [[code](https://github.com/vislearn/ngransac)] [[project](https://hci.iwr.uni-heidelberg.de/vislearn/research/neural-guided-ransac/)]
 - <a id="ULCM">[ULCM]</a> Unsupervised Learning of Consensus Maximization for 3D Vision Problems, CVPR'2019 [[pdf]](http://openaccess.thecvf.com/content_CVPR_2019/papers/Probst_Unsupervised_Learning_of_Consensus_Maximization_for_3D_Vision_Problems_CVPR_2019_paper.pdf)
-- [SuperGlue] SuperGlue: Learning Feature Matching with Graph Neural Networks, CVPR'2020 [[code]](https://github.com/magicleap/SuperGluePretrainedNetwork)
-- [ACNe] ACNe: Attentive context normalization for robust permutation-equivariant learning, CVPR'2020[[code]](https://github.com/vcg-uvic/acne)
-- [LMCNet] Learnable motion coherence for correspondence pruning,CVPR'2021 [[pdf]](https://arxiv.org/abs/2011.14563)[[code]](https://github.com/liuyuan-pal/LMCNet)
-- [LSV-ANet] LSV-ANet: Deep Learning on Local Structure Visualization for Feature Matching,TGRS'2021[[pdf]](https://ieeexplore.ieee.org/document/9377555)
-- [CLNet] Progressive correspondence pruning by consensus learning,ICCV'2021 [[pdf]](https://arxiv.org/abs/2101.00591)
-- [TNet] T-Net: Effective permutation-equivariant network for two-view correspondence learning,ICCV'2021[[pdf]](https://openaccess.thecvf.com/content/ICCV2021/papers/Zhong_T-Net_Effective_Permutation-Equivariant_Network_for_Two-View_Correspondence_Learning_ICCV_2021_paper.pdf)
+- <a id="super">[SuperGlue]</a> SuperGlue: Learning Feature Matching with Graph Neural Networks, CVPR'2020 [[code]](https://github.com/magicleap/SuperGluePretrainedNetwork)
+- <a id="ACNe"> [ACNe] </a> ACNe: Attentive context normalization for robust permutation-equivariant learning, CVPR'2020[[code]](https://github.com/vcg-uvic/acne)
+- <a id="LMC"> [LMCNet]</a> Learnable motion coherence for correspondence pruning,CVPR'2021 [[pdf]](https://arxiv.org/abs/2011.14563)[[code]](https://github.com/liuyuan-pal/LMCNet)
+- <a id="LSVA">[LSV-ANet]</a> LSV-ANet: Deep Learning on Local Structure Visualization for Feature Matching,TGRS'2021[[pdf]](https://ieeexplore.ieee.org/document/9377555)
+- <a id="CL">[CLNet]</a> Progressive correspondence pruning by consensus learning,ICCV'2021 [[pdf]](https://arxiv.org/abs/2101.00591)
+- <a id="T">[TNet]</a> T-Net: Effective permutation-equivariant network for two-view correspondence learning,ICCV'2021[[pdf]](https://openaccess.thecvf.com/content/ICCV2021/papers/Zhong_T-Net_Effective_Permutation-Equivariant_Network_for_Two-View_Correspondence_Learning_ICCV_2021_paper.pdf)
 - [GLHA] Cascade Network with Guided Loss and Hybrid Attention for Finding Good Correspondences,AAAI'2021[[pdf]](https://arxiv.org/abs/2102.00411)[[code]](https://github.com/wenbingtao/GLHA)
 - [MSANet]MSA-net: Establishing reliable correspondences by multiscale attention network,TIP'2022[[pdf]](https://guobaoxiao.github.io/papers/TIP2022b(1).pdf)
 - [CAT] Correspondence Attention Transformer: A Context-sensitive Network for Two-view Correspondence Learning, TMM'2022[[pdf]](https://www.researchgate.net/profile/Yang-Wang-241/publication/359451839_Correspondence_Attention_Transformer_A_Context-sensitive_Network_for_Two-view_Correspondence_Learning/links/62ce44b3b261d22751eb64d4/Correspondence-Attention-Transformer-A-Context-Sensitive-Network-for-Two-View-Correspondence-Learning.pdf) [[code]](https://github.com/jiayi-ma/CorresAttnTransformer)
